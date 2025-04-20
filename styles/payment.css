@@ -1,0 +1,190 @@
+/* עיצוב כללי לעמוד */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* כותרות */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* עיצוב מיכלים כללים */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* left ו־right יוצגו בטור */
+.left,
+.right {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב ייחודי ל-left */
+.left {
+    border-left: 5px solid #3498db;
+    /* כחול */
+}
+
+/* עיצוב ייחודי ל-right */
+.right {
+    border-left: 5px solid #2ecc71;
+    /* ירוק */
+}
+
+/* כפתורים */
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* שדות קלט */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+/* טפסים */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* טבלאות */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+#spinner-container {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+#spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(180, 172, 172);
+    border-radius: 50%;
+    border-right-color: #0d6efd;
+    border-bottom-color: #0d6efd;
+    margin: auto;
+    margin-top: 5%;
+    animation: spinner infinite linear 0.8s;
+}
+
+@keyframes spinner {
+    from {}
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* הודעות התראה */
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.success {
+    background-color: #4caf50;
+}
+
+.info {
+    background-color: #2196f3;
+}
+
+.warning {
+    background-color: #ff9800;
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* לינקים */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

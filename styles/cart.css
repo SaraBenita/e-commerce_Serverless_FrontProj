@@ -1,0 +1,96 @@
+/* קונטיינר עגלת הקניות */
+#cartItems {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* פריט בעגלה */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* כפתור הסרה */
+.remove-button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease-in-out;
+}
+
+.remove-button:hover {
+    background: #c0392b;
+}
+
+/* סכום כולל */
+#totalPrice {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+/* כפתור תשלום */
+#checkoutButton {
+    display: block;
+    width: 100%;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+#checkoutButton:hover {
+    background: #2980b9;
+}
+
+/* רספונסיביות למסך קטן */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-price,
+    .remove-button {
+        margin-top: 10px;
+    }
+
+    #totalPrice {
+        text-align: left;
+    }
+}

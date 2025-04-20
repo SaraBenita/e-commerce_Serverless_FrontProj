@@ -1,0 +1,18 @@
+[
+    {
+        "cuponCode": "NEWYEAR",
+        "discount": 50
+    },
+    {
+        "cuponCode": "FULLSTACK",
+        "discount": 100
+    },
+    {
+        "cuponCode": "ASHDOD",
+        "discount": 25
+    },
+    {
+        "cuponCode": "VENOM25",
+        "discount": 60
+    }
+]

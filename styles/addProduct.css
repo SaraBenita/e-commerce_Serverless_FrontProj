@@ -1,0 +1,106 @@
+/* מרכז את ה-section בעמוד */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* עיצוב הקונטיינר של הטופס */
+section>div {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 800px;
+    /* צמצום רוחב מקסימלי */
+}
+
+/* עיצוב כל שורה בטופס */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    /* מאפשר לשדות לרדת שורה במסכים קטנים */
+}
+
+/* עיצוב התוויות (Labels) */
+.item label {
+    font-weight: bold;
+    width: 40%;
+    text-align: left;
+}
+
+/* עיצוב השדות (Inputs, Select) */
+.item input,
+.item select {
+    width: 55%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* עיצוב הכפתור */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* כותרת */
+h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 📱 רספונסיביות לטאבלטים וטלפונים */
+@media screen and (max-width: 768px) {
+    section {
+        margin: 50px;
+    }
+
+    section>div {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .item {
+        flex-direction: column;
+        /* שינוי תצוגה לערימה */
+        align-items: flex-start;
+    }
+
+    .item label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .item input,
+    .item select {
+        width: 100%;
+        /* שימוש ברוחב מלא */
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* 📱 התאמה נוספת למסכים קטנים מאוד (עד 480px) */
+@media screen and (max-width: 480px) {
+    section>div {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

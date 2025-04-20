@@ -1,0 +1,121 @@
+/* קונטיינר לכל המוצרים */
+#allProducts {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+/* כל כרטיס מוצר */
+#allProducts .card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#allProducts .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* תמונת מוצר */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* גוף הכרטיס */
+.card .card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* כותרת מוצר */
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* תיאור מוצר */
+.card-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    text-align: center;
+    min-height: 60px;
+}
+
+/* כפתור פרטים נוספים */
+.card .btn {
+    margin-top: auto;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* כותרת מעל המוצרים */
+#productsTitle {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #343a40;
+    margin-top: 40px;
+}
+
+/* קרוסלה - עיצוב משודרג */
+#carouselExampleControls {
+    width: 90%;
+    margin: 30px auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-height: 400px;
+    /* גובה מקסימלי לקרוסלה */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    /* קובע את הגובה של התמונות */
+    object-fit: contain;
+    /* מונע חיתוך של התמונה */
+    background-color: #f8f9fa;
+    /* רקע אחיד במקרה של יחס שונה */
+    padding: 10px;
+    /* מרווח קטן מסביב */
+}
+
+/* טקסט מעל הקרוסלה */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* רקע כהה לטקסט */
+    border-radius: 12px;
+    padding: 10px 20px;
+    bottom: 20px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
