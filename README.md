@@ -67,14 +67,14 @@ This is a serverless e-commerce web application that allows users to register, l
 ## Screenshots
 
 ### Home Page
-![Home Page](images/home.png)
+![Home Page](resources/homePage.png)
 
 ### Product Page
-![Product Page](images/product.png)
+![Product Page](resources/productPage.png)
 
 ### Cart Page
-![Cart Page](images/cart.png)
+![Cart Page](resources/cartPage.png)
 
 ### Payment Page
-![Payment Page](images/payment.png)
+![Payment Page](resources/paymentPage.png)
 
