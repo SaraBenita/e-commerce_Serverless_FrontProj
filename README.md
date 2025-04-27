@@ -1,6 +1,7 @@
 # E-Commerce Serverless Application
 
-This is a serverless e-commerce web application that allows users to register, log in, browse products, add products (for sellers), manage their cart, and complete purchases. The application is built using HTML, CSS, JavaScript, and local storage for data persistence.
+This is a serverless e-commerce web application that allows users to register, log in, browse products, add products (for sellers), manage their cart, and complete purchases. 
+**The application is built using HTML, CSS, JavaScript, and local storage for data persistence.**
 
 ## Features
 
